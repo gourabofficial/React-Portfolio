@@ -1,6 +1,7 @@
 import React from "react";
 import Navber from "./Components/Navber/Navber";
 import Home from "./Components/Home/Home";
+import { About } from "./Components/About/About";
 
 export const App = () => {
   return (
@@ -9,7 +10,8 @@ export const App = () => {
        h-auto w-full overflow-hidden text-white">
         <Navber />
         <Home/>
-     
+        <About />
+        
       </div>
       
     </>

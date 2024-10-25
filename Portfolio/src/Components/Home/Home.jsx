@@ -18,7 +18,7 @@ export const Home = () => {
          font-semibold rounded-3xl bg-[#942f50]" > Contact me</button>
       </div>
       <div>
-        <img className= ' w-24 h-24 md:w-80 md:h-80 rounded-xl object-cover shadow-lg ' src={profilepic } alt="" />
+        <img className='w-2 hover:scale-105 transition duration-300 ease-in-out h-24 md:w-80 md:h-80 rounded-xl object-cover shadow-lg' src={profilepic} alt="" />
       </div>
     </div>
   );
