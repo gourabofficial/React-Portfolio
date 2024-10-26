@@ -11,6 +11,8 @@ export const ProjectSec = () => {
         <ProjectCardSec title= "Currency Converter" main= "currency converter " />
         <ProjectCardSec title= "Password Generator " main= "password generator react " />
         <ProjectCardSec title= "Myntra clone " main= "myntra clone using html css" />
+        <ProjectCardSec title= "Amaxon clone  " main= "myntra clone using html css" />
+        <ProjectCardSec title= "xyz clone " main= "myntra clone using html css" />
 
       </div >
     </div>

@@ -12,10 +12,10 @@ export const App = () => {
   return (
     <>
       <main className="bg-gradient-to-r from-blue-950 to-purple-900
-       w-full overflow-hidden text-white px-10 md:px-20 h-full ">
+       h-auto w-full  overflow-hidden text-white  ">
         <Routes>
           <Route element={<RootLayout/>} >
-            <Route index element={<Home/>} />
+            <Route index element={<Home/>} /> 
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact/>} />
             <Route path="/project" element={<Projects/>} />

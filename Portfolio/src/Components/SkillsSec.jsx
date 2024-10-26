@@ -34,7 +34,7 @@ const SkillsSec = () => {
             <SiNodedotjs color="#68A063" size={50} />
           </span>
           <span className="p-3 bg-zinc-950 flex items-center rounded-2xl transition duration-300 hover:bg-zinc-900 hover:scale-110">
-            <SiTailwindcss color="#06B6D4" size={50} /> {/* Tailwind CSS */}
+            <SiTailwindcss color="#06B6D4" size={50} /> 
           </span>
         </div>
       </div>

@@ -7,10 +7,10 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white pt-6  space-x-8 ml-auto">
+    <nav className="flex flex-wrap justify-between md:items-center text-white pt-6  space-x-8 ml-auto  ">
     
       <NavLink to="/" className="text-3xl font-bold tracking-wide transition duration-300
-       hover:bg-gray-400 hover:scale-110 rounded-lg">
+       hover:bg-gray-400 hover:scale-110 rounded-lg m-8 ml-20 ">
 
         Portfolio
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
       <ul
         className={`${menu ? "block" : "hidden"
-          } md:flex gap-10 bg-opacity-30 md:bg-transparent`}
+          } md:flex gap-8 pr-10 bg-opacity-30 md:bg-transparent`}
       >
         <NavLink to="/about"
           className="text-md font-extrabold px-3 transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg">
