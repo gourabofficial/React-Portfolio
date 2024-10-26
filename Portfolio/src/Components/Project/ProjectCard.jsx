@@ -3,7 +3,8 @@ import bannerimg from "../../assets/baner.jpg";
 
 export const ProjectCard = ({ title, main }) => {
   return (
-    <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl">
+    <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] 
+    shadow-xl shadow-slate-900 rounded-2xl">
       <img className="p-4" src={bannerimg} alt="bannerimg" />
       <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">
         {title}

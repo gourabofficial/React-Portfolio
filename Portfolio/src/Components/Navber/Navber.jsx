@@ -37,7 +37,7 @@ const Navbar = () => {
             GitHub
           </li>
         </a>
-        <a href="#Contact">
+        <a href="#Footer">
           <li className="text-md transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg p-1 md:p-0">
             Contact
           </li>
