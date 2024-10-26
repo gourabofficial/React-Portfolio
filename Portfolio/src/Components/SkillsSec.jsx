@@ -3,7 +3,7 @@ import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { DiJava } from "react-icons/di";
 import { SiExpress, SiNodedotjs ,SiTailwindcss} from "react-icons/si";
 
-const Skills = () => {
+const SkillsSec = () => {
   return (
     <div id="Skills" className="p-10 md:p-24">
       <h1 className="text-2xl md:text-4xl text-white font-bold">Skills</h1>
@@ -42,4 +42,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SkillsSec;

@@ -1,11 +1,10 @@
 import React from "react";
-import bannerimg from "../../assets/baner.jpg";
 
-export const ProjectCard = ({ title, main }) => {
+export const ProjectCardSec = ({ title, main }) => {
   return (
     <div className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] 
     shadow-xl shadow-slate-900 rounded-2xl">
-      <img className="p-4" src={bannerimg} alt="bannerimg" />
+      <img className="p-4" src= '/assets/baner.jpg' alt="bannerimg" />
       <h3 className="px-4 text-xl md:text-2xl font-bold leading-normal">
         {title}
       </h3>
@@ -22,4 +21,4 @@ export const ProjectCard = ({ title, main }) => {
     </div>
   );
 };
-export default ProjectCard;
+export default ProjectCardSec;

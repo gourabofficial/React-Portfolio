@@ -1,8 +1,7 @@
 import React from "react";
-import profilepic from '../../assets/profile.jpg';
 
 
-export const Home = () => {
+export const HomeSec = () => {
   return (
     <div className="text-white flex w-full justify-between items-start p-10 md:p-20">
       <div className="md:w-2/4 md:pt-10 ">
@@ -18,8 +17,10 @@ export const Home = () => {
          font-semibold rounded-3xl bg-[#314def]" > Linkdin</button>
       </div>
       <div>
-        <img className='w-2 hover:scale-105 transition duration-300 ease-in-out h-24 md:w-80 md:h-80 rounded-xl object-cover shadow-lg' src={profilepic} alt="" />
+        <img className='w-2 hover:scale-105 transition
+         duration-300 ease-in-out h-24 md:w-80 md:h-80
+         rounded-xl object-cover shadow-lg' src='/assets/profile.jpg' alt="" />
       </div>
     </div>
   );
-}; export default Home;
+}; export default HomeSec;

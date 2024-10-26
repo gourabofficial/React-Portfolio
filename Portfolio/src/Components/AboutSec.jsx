@@ -1,8 +1,7 @@
 import React from "react";
-import aboutpic from "../../assets/about.jpg";
 import { IoArrowForward } from "react-icons/io5";
 
-export const About = () => {
+export const AboutSec = () => {
   return (
     <div id="About" className="text-white md:flex overflow-hidden items-center
      md:flex-wrap md:justify-center bg-black shadow-xl mx-0 md:mx-20 bg-opacity-30 rounded-lg p-12">
@@ -13,7 +12,7 @@ export const About = () => {
             className="md:h-72 md:w-96 rounded-lg shadow-lg 
             transform hover:scale-105 transition
             duration-300 ease-in-out m-14"
-            src={aboutpic}
+            src='/assets/about.jpg'
             alt="About"
           />
 
@@ -74,3 +73,4 @@ export const About = () => {
     </div>
   );
 };
+ export default AboutSec;
