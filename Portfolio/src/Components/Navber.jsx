@@ -7,10 +7,11 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="flex flex-wrap justify-between md:items-center text-white pt-6  space-x-8 ml-auto  ">
+    <nav className="flex flex-wrap justify-between md:items-center text-white pt-6  
+    space-x-8 ml-auto  shadow-2xl">
     
       <NavLink to="/" className="text-3xl font-bold tracking-wide transition duration-300
-       hover:bg-gray-400 hover:scale-110 rounded-lg m-8 ml-20 ">
+        hover:scale-110 hover:text-orange-500 rounded-lg m-8 ml-20 p-2 ">
 
         Portfolio
 
@@ -21,23 +22,23 @@ const Navbar = () => {
           } md:flex gap-8 pr-10 bg-opacity-30 md:bg-transparent`}
       >
         <NavLink to="/about"
-          className="text-md font-extrabold px-3 transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg">
+          className="text-md font-extrabold px-3 transition duration-500 hover:text-orange-500 hover:scale-110 ">
           About
         </NavLink>
         <NavLink to={"/skills"}
-          className="text-md font-extrabold px-3 transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg">
+          className="text-md font-extrabold px-3 transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg">
           Skills
         </NavLink>
         <NavLink to="/project"
-          className="text-md font-extrabold transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg px-3">
+          className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3">
           Projects
         </NavLink>
         <NavLink to="/github"
-          className="text-md font-extrabold transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg px-3">
+          className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3">
           GitHub
         </NavLink>
         <NavLink to="/contact"
-          className="text-md font-extrabold transition duration-300 hover:bg-gray-400 hover:scale-110 rounded-lg px-3">
+          className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3">
           Contact
         </NavLink>
       </ul>
