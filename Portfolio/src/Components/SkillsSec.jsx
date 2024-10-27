@@ -5,6 +5,7 @@ import { SiExpress, SiNodedotjs ,SiTailwindcss} from "react-icons/si";
 
 const SkillsSec = () => {
   return (
+  
     <div id="Skills" className="p-10 md:p-24 shadow-xl bg-opacity-30">
       <h1 className="text-2xl md:text-4xl text-white font-bold">Skills</h1>
       <div className="flex flex-wrap items-center justify-around">
@@ -38,7 +39,8 @@ const SkillsSec = () => {
           </span>
         </div>
       </div>
-    </div>
+      </div>
+      
   );
 };
 

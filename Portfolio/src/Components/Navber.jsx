@@ -9,7 +9,9 @@ const Navbar = () => {
     <nav className="flex flex-wrap justify-between items-center text-white pt-6 shadow-2xl">
       <NavLink
         to="/"
-        className="text-3xl font-bold tracking-wide transition duration-300 hover:scale-110 hover:text-orange-500 rounded-lg m-8 ml-20 p-2"
+        className="text-3xl font-bold tracking-wide transition
+         duration-300 hover:scale-110 hover:text-orange-500 
+         rounded-lg m-8 ml-20 p-2"
       >
         Portfolio
       </NavLink>
@@ -38,7 +40,7 @@ const Navbar = () => {
         <li>
           <NavLink
             to="/about"
-            className="text-md font-extrabold px-3 transition duration-500 hover:text-orange-500 hover:scale-110"
+            className="text-md font-extrabold px-3 transition duration-500 hover:text-orange-500 hover:scale-110  "
             onClick={() => setMenu(false)} // Close menu on click
           >
             About
@@ -57,25 +59,25 @@ const Navbar = () => {
           <NavLink
             to="/project"
             className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3"
-            onClick={() => setMenu(false)} // Close menu on click
+            onClick={() => setMenu(false)} 
           >
             Projects
           </NavLink>
         </li>
         <li>
-          <NavLink
-            to="/github"
-            className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3"
-            onClick={() => setMenu(false)} // Close menu on click
-          >
-            GitHub
-          </NavLink>
+        <NavLink
+                  to="/github"
+                  className="text-md font-extrabold px-3 transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg"
+            onClick={() => setMenu(false)}
+                >
+                  GitHub
+                </NavLink>
         </li>
         <li>
           <NavLink
             to="/contact"
             className="text-md font-extrabold transition duration-300 hover:text-orange-500 hover:scale-110 rounded-lg px-3"
-            onClick={() => setMenu(false)} // Close menu on click
+            onClick={() => setMenu(false)} 
           >
             Contact
           </NavLink>
