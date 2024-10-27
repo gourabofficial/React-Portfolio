@@ -6,7 +6,7 @@ export const GithubSec = ({ data }) => {
     return (
       <h1 className="w-full h-screen bg-white flex items-center justify-center
        text-black font-bold text-4xl rounded-xl mt-4 fade-in-animation">
-       Wait...
+       Wait a Second ....
        
       </h1>
     );
