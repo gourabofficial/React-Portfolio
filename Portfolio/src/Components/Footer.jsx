@@ -70,14 +70,14 @@ export const Footer = () => {
               placeholder="give some feedback"
               className="w-full mt-2 py-8 px-8 rounded-lg bg-white border
                border-gray-400 text-gray-800 
-               font-semibold focus:border-orange-500 focus:outline-none"
+               font-semibold focus:border-orange-500 focus:outline-none "
             />
           </div>
 
           <button
             type="submit"
             className="  md:w-32 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 
-            rounded-lg mt-3 transition ease-in-out duration-300 flex  placeholder:text-start"
+            rounded-lg mt-3 transition ease-in-out duration-300 "
           >
             Submit
           </button>
