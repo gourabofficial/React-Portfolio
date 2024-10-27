@@ -4,9 +4,9 @@ import React from "react";
 export const GithubSec = ({ data }) => {
   if (!data) {
     return (
-      <h1 className="w-full h-screen bg-white flex items-center justify-center
-       text-black font-bold text-4xl rounded-xl mt-4 fade-in-animation">
-       Wait a Second....
+      <h1 className="w-full h-screen flex items-center justify-center
+       font-bold text-4xl rounded-xl mt-4 fade-in-animation">
+       <img src="/assets/loader.svg" alt="loading" />
        
       </h1>
     );
