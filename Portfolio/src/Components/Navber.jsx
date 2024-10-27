@@ -6,7 +6,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="flex flex-wrap justify-between items-center text-white pt-6 shadow-2xl">
+    <nav className="flex flex-wrap justify-between items-center text-white pt-6 shadow-2xl fade-in-animation">
       <NavLink
         to="/"
         className="text-3xl font-bold tracking-wide transition

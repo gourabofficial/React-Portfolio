@@ -1,18 +1,19 @@
-// Components/GithubSec.jsx
+
 import React from "react";
 
 export const GithubSec = ({ data }) => {
   if (!data) {
     return (
-      <h1 className="w-full h-screen bg-black flex items-center justify-center
-        text-white font-bold text-4xl rounded-xl mt-4">
-        User Not Found
+      <h1 className="w-full h-screen bg-white flex items-center justify-center
+       text-black font-bold text-4xl rounded-xl mt-4 fade-in-animation">
+       Wait...
+       
       </h1>
     );
   }
 
   return (
-    <div className="text-center m-4 bg-gray-900 text-black p-6 rounded-lg shadow-lg max-w-md mx-auto">
+    <div className="text-center m-4 bg-gray-900 text-black p-6 rounded-lg shadow-lg max-w-md mx-auto fade-in-animation">
       <h1 className="font-bold text-orange-500 text-2xl mb-4">GitHub Information</h1>
 
       <div className="bg-gray-300 p-4 rounded-lg mb-6">

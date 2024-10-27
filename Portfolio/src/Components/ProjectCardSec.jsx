@@ -21,7 +21,7 @@ export const ProjectCardSec = ({ title, main, imgSrc ,demoLink,sourceCodeLink}) 
         <button className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4
           hover:bg-blue-500 transition duration-300 transform hover:scale-110
           font-semibold rounded-3xl bg-[#465697]">
-          Demo
+          Check
         </button>
       </a>
       

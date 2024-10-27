@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div
       id="Footer"
-      className="flex flex-col md:flex-row justify-between shadow-xl bg-opacity-30 text-white p-6 md:p-12 items-center"
+      className="flex flex-col md:flex-row justify-between shadow-xl bg-opacity-30 text-white p-6 md:p-12 items-center fade-in-animation"
     >
       <div className="text-center md:text-left mb-6 md:mb-0">
         <h1 className="text-2xl md:text-6xl font-bold">Contact</h1>
@@ -59,23 +59,25 @@ export const Footer = () => {
             />
           </div>
 
-          <div className="flex flex-col mt-2">
-            <label htmlFor="tel" className="hidden">
+          <div className="flex flex-col mt-4 ">
+            <label htmlFor="text" className="hidden">
               Number
             </label>
             <input
-              type="tel"
-              name="tel"
-              id="tel"
-              placeholder="Telephone Number"
-              className="w-full mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
+              type="text"
+              name="text"
+              id="text"
+              placeholder="give some feedback"
+              className="w-full mt-2 py-8 px-8 rounded-lg bg-white border
+               border-gray-400 text-gray-800 
+               font-semibold focus:border-orange-500 focus:outline-none"
             />
           </div>
 
           <button
             type="submit"
-            className="md:w-32 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 
-            rounded-lg mt-3 transition ease-in-out duration-300"
+            className="  md:w-32 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 
+            rounded-lg mt-3 transition ease-in-out duration-300 flex  placeholder:text-start"
           >
             Submit
           </button>

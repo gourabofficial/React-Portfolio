@@ -21,3 +21,34 @@
 .project-card:hover {
   box-shadow: 0 0 10px #465697, 0 0 20px #465697, 0 0 30px #465697;
 }
+
+.fade-in-animation {
+  animation: fadeIn 0.8s ease-in-out;
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.7s ease-in-out forwards;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+

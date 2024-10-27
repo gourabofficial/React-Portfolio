@@ -5,7 +5,7 @@ export const AboutSec = () => {
     <div
       id="About"
       className="flex flex-col md:flex-row items-center md:items-start md:justify-between
-      p-10 md:p-20 bg-black text-white rounded-lg shadow-xl bg-opacity-30"
+      p-10 md:p-20 bg-black text-white rounded-lg shadow-xl bg-opacity-30 fade-in-animation "
     >
       <div className="flex flex-col items-center md:items-start md:pr-10">
         <h2 className="text-2xl md:text-4xl font-bold mb-11  ">About Me</h2>

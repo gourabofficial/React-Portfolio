@@ -7,9 +7,6 @@ export const Home = () => {
   return (
     <>
       <HomeSec />
-      <AboutSec />
-      <SkillsSec />
-      <ProjectSec />
     </>
   )
 }
