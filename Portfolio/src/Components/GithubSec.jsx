@@ -6,7 +6,7 @@ export const GithubSec = ({ data }) => {
     return (
       <h1 className="w-full h-screen flex items-center justify-center
        font-bold text-4xl rounded-xl mt-4 fade-in-animation">
-       <img src="/assets/loader.svg" alt="loading" />
+       <img width={10} height={10} src="/assets/loader.svg" alt="loading" />
        
       </h1>
     );
