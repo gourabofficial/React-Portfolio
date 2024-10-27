@@ -4,3 +4,20 @@
 *{
   scroll-behavior: smooth;
 }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glow effect */
+.project-card:hover {
+  box-shadow: 0 0 10px #465697, 0 0 20px #465697, 0 0 30px #465697;
+}
