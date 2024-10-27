@@ -4,11 +4,14 @@ import React from "react";
 export const GithubSec = ({ data }) => {
   if (!data) {
     return (
-      <h1 className="w-full h-screen flex items-center justify-center
-       font-bold text-4xl rounded-xl mt-4 fade-in-animation">
-       <img width={10} height={10} src="/assets/loader.svg" alt="loading" />
-       
-      </h1>
+      <h1 className="w-full h-screen flex items-center justify-center font-bold text-4xl rounded-xl mt-4 fade-in-animation">
+      <img
+        className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-16 lg:h-16"
+        src="/assets/loader.svg"
+        alt="loading"
+      />
+    </h1>
+    
     );
   }
 
