@@ -24,7 +24,7 @@ export const ProjectSec = () => {
           title="Password Generator" 
           main="Create your own password" 
           imgSrc="/assets/password.jpg" 
-          demoLink= 'https://gourabofficial.github.io/Password_Generator/'
+          demoLink= 'https://password-genarator-react.vercel.app/'
           sourceCodeLink='https://github.com/gourabofficial/Overpower-React/tree/main/Password_Generator'
         />
         <ProjectCardSec 
@@ -38,7 +38,7 @@ export const ProjectSec = () => {
           title="React-Website" 
           main="simple website using react and react-router" 
           imgSrc="/assets/ownwebsite.png" 
-          demoLink= 'https://gourabofficial.github.io/Overpower-React/'
+          demoLink= 'https://react-website-orcin-eight.vercel.app/'
           sourceCodeLink='https://github.com/gourabofficial/Overpower-React/tree/main/reactRoute'
         />
         <ProjectCardSec 
