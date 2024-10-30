@@ -22,7 +22,7 @@ export const Footer = () => {
         </li>
         <li className="flex gap-2 items-center justify-center md:justify-start">
           <MdPhone size={20} />
-          916294692462
+          9100000000
         </li>
         <li className="flex gap-2 items-center justify-center md:justify-start">
           <MdLocationOn size={20} />
