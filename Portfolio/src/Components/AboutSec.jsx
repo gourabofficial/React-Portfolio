@@ -21,6 +21,7 @@ export const AboutSec = () => {
           about football and programming.
         </p>
       </div>
+      
 
       <div className="mt-8 md:mt-0 md:pl-10 flex flex-col space-y-8  ">
         <div>
