@@ -15,7 +15,7 @@ const Navbar = () => {
       >
         <FaHome
           className="text-white transition duration-300 hover:scale-110 hover:text-orange-500"
-          style={{ fontSize: "1.6em" }}
+          style={{ fontSize: "1.6em", marginTop: '10px', marginBottom: '5px'}}
         />
       </NavLink>
       <div className="md:hidden absolute right-10 top-6 z-50">
