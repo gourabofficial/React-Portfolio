@@ -11,11 +11,11 @@ const Navbar = () => {
       <NavLink
         to="/"
         className="text-3xl font-bold tracking-wide transition duration-300 hover:scale-110 hover:text-orange-500 rounded-lg m-4 md:m-8 md:ml-20 p-2"
-        style={{ marginTop: '-10px' }}
+        style={{ marginTop: '-14px' }}
       >
         <FaHome
           className="text-white transition duration-300 hover:scale-110 hover:text-orange-500"
-          style={{ fontSize: "1.6em", marginTop: '10px', marginBottom: '5px'}}
+          style={{ fontSize: "1.9em", marginTop: '8px', marginBottom: '0px'}}
         />
       </NavLink>
       <div className="md:hidden absolute right-10 top-6 z-50">
