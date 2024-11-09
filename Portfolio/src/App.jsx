@@ -51,7 +51,7 @@ export const App = () => {
   return (
     <>
       <main className="bg-gradient-to-r from-blue-950 to-purple-900
-       min-h-screen w-full  overflow-hidden text-white">
+       min-h-screen w-full  overflow-hidden text-white ">
         <Routes>
           <Route element={<RootLayout />} >
             <Route index element={<Home />} /> 

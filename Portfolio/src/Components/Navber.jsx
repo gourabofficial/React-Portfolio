@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
 import { NavLink } from "react-router-dom";
+import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -8,11 +9,12 @@ const Navbar = () => {
   return (
     <nav className="flex flex-wrap justify-between items-center text-white pt-6 shadow-2xl fade-in-animation">
       <NavLink
-        to="/"
-        className="text-3xl font-bold tracking-wide transition duration-300 hover:scale-110 hover:text-orange-500 rounded-lg m-8 ml-20 p-2"
-      >
-        Portfolio
-      </NavLink>
+  to="/"
+  className="text-3xl font-bold tracking-wide transition duration-300 hover:scale-110 hover:text-orange-500 rounded-lg m-8 ml-20 p-2"
+>
+  <FaHome className="inline-block text-white transition duration-300 hover:scale-110 hover:text-orange-500" style={{ fontSize: "1.8em" }} />
+</NavLink>
+
 
       <div className="md:hidden absolute right-10 top-6 z-50">
         {menu ? (
