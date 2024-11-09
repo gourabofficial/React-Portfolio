@@ -64,10 +64,17 @@ export const Footer = () => {
           <button
             type="submit"
             className="md:w-32 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
-            disabled={state?.submitting || false}  // Use optional chaining here
+            disabled={state && state.submitting}  // Ensure state is defined
           >
             Submit
           </button>
+          
+          {state && state.succeeded && (
+            <p className="text-green-500 mt-4">Thank you for your feedback!</p>
+          )}
+          {state && state.errors.length > 0 && (
+            <p className="text-red-500 mt-4">There was an error submitting your feedback. Please try again later.</p>
+          )}
         </form>
       </div>
     </div>
