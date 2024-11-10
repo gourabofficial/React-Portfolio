@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import { MdOutlineEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { useForm } from "@formspree/react";
 
 export const Footer = () => {
-  const { state, handleSubmit } = useForm("xwpkbebv"); // Ensure Form ID is correct
+  const [state, handleSubmit] = useForm("mbljyljw");
+  const formRef = useRef(null); 
+  const [isSubmitted, setIsSubmitted] = useState(false); 
+
+  const onSubmit = (e) => {
+    handleSubmit(e);
+    setIsSubmitted(false); 
+  };
+
+  useEffect(() => {
+    if (state.succeeded && !isSubmitted) {
+      formRef.current.reset(); 
+      setIsSubmitted(true); 
+    }
+  }, [state.succeeded, isSubmitted]);
 
   return (
     <div
@@ -33,11 +47,13 @@ export const Footer = () => {
       </ul>
 
       <div className="bg-gray-300 rounded-xl w-full md:w-auto">
-        <form onSubmit={handleSubmit} className="p-6 flex flex-col justify-center">
+        <form
+          onSubmit={onSubmit} 
+          className="p-6 flex flex-col justify-center"
+          ref={formRef} 
+        >
           <div className="flex flex-col">
-            <label htmlFor="email" className="hidden">
-              Email
-            </label>
+            <label htmlFor="email" className="hidden">Email</label>
             <input
               type="email"
               name="email"
@@ -49,9 +65,7 @@ export const Footer = () => {
           </div>
 
           <div className="flex flex-col mt-4">
-            <label htmlFor="message" className="">
-              
-            </label>
+            <label htmlFor="message" className="hidden"></label>
             <textarea
               name="message"
               id="message"
@@ -64,16 +78,16 @@ export const Footer = () => {
           <button
             type="submit"
             className="md:w-32 bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg mt-3 transition ease-in-out duration-300"
-            disabled={state && state.submitting}  // Ensure state is defined
+            disabled={state.submitting}
           >
             Submit
           </button>
-          
-          {state && state.succeeded && (
-            <p className="text-green-500 mt-4">Thank you for your feedback!</p>
+
+          {state.succeeded && (
+            <p className="text-black mt-4 font-bold">Thank you for your feedback!</p>
           )}
-          {state && state.errors.length > 0 && (
-            <p className="text-red-500 mt-4">There was an error submitting your feedback. Please try again later.</p>
+          {state.errors && state.errors.length > 0 && (
+            <p className="text-red-500 mt-4 font-bold">There was an error submitting your feedback. Please try again later.</p>
           )}
         </form>
       </div>
