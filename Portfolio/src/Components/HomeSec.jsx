@@ -1,13 +1,15 @@
 import React from "react";
 
+
+
 export const HomeSec = () => {
   
   return (
     <div className="flex flex-col md:flex-row w-full justify-between items-center p-10 md:p-20 text-white fade-in-animation">
       <div className="md:w-2/4 md:pt-10">
-        <h1 className="text-3xl md:text-6xl font-bold flex leading-normal tracking-tight mb-2">
+        <h1 className=" text-3xl md:text-6xl font-bold flex leading-normal tracking-tight mb-2 gradient-text ">
           Hello i am
-          <span className="ml-3 text-green-500">Gourab</span>
+          <span className="ml-3 text-green-500 typing-animation ">Gourab</span>
         </h1>
         <p className="text-md md:text-2xl tracking-tight font-medium">
           Welcome to My Portfolio!
