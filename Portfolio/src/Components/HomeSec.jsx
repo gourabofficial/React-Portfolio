@@ -1,7 +1,5 @@
 import React from "react";
 
-
-
 export const HomeSec = () => {
   
   return (
@@ -9,7 +7,7 @@ export const HomeSec = () => {
       <div className="md:w-2/4 md:pt-10">
         <h1 className=" text-3xl md:text-6xl font-bold flex leading-normal tracking-tight mb-2 gradient-text ">
           Hello i am
-          <span className="ml-3 text-green-500 typing-animation ">Gourab</span>
+          <span className="ml-3 text-yellow-500 typing-animation ">Gourab</span>
         </h1>
         <p className="text-md md:text-2xl tracking-tight font-medium">
           Welcome to My Portfolio!
