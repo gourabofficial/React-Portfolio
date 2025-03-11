@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
+
+* {
   scroll-behavior: smooth;
 }
 
@@ -17,14 +18,11 @@
   }
 }
 
-/* Glow effect */
-.project-card:hover {
-  box-shadow: 0 0 10px #465697, 0 0 20px #465697, 0 0 30px #465697;
-}
-
 .fade-in-animation {
   animation: fadeIn 0.8s ease-in-out;
 }
+
+/* Slide-in animation */
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -39,62 +37,144 @@
 .slide-in {
   animation: slideIn 0.7s ease-in-out forwards;
 }
+
+/* Glow effect for project cards */
+.project-card:hover {
+  box-shadow: 0 0 10px #465697, 0 0 20px #465697, 0 0 30px #465697;
+}
+
+/* Typing animation */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 7ch;
   }
-}
-.ripple {
-  position: relative;
-  overflow: hidden;
-}
-
-
-to {
-  width: 100%;
-}
-
-.ripple {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Add in your CSS file or within the <style> section in your component */
-/* Typing animation */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 7ch; }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
-}
-
-@keyframes gradient {
-  0%, 100% { color: #ffffff; }
-  50% { color: #a8dadc; }
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-2px); }
+  50% {
+    border-color: transparent;
+  }
 }
 
 .typing-animation {
   display: inline-block;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 4s steps(7, end) infinite alternate, blink 0.6s step-end infinite, bounce 1s infinite;
+  border-right: 0.15em solid orange; /* Cursor effect */
+  animation: typing 4s steps(7, end) infinite alternate, blink 0.6s step-end infinite;
+}
+
+/* Gradient text animation */
+@keyframes gradient {
+  0%, 100% {
+    color: #ffffff;
+  }
+  50% {
+    color: #a8dadc;
+  }
 }
 
 .gradient-text {
   animation: gradient 3s ease-in-out infinite;
 }
 
+/* Hover effect for typing animation */
 .typing-animation:hover {
   text-shadow: 0px 0px 5px rgba(238, 241, 50, 0.7); /* Soft green glow */
   color: #e1d711; /* Slightly lighter green on hover */
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce-animation {
+  animation: bounce 1s infinite;
+}
+
+/* Ripple effect */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  opacity: 1;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.ripple:active::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0e19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #465697;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #314def;
+}
+
+/* Add this to your global CSS file or a CSS module */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
+}
+
+.md\:p-24 {
+  padding: 6rem;
+}
+
+@media (max-width: 768px) {
+  .p-10 {
+    padding: 1.5rem;
+  }
+
+  .md\:p-24 {
+    padding: 3rem;
+  }
+
+  .gap-5 {
+    gap: 1rem;
+  }
 }

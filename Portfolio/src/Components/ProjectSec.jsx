@@ -3,49 +3,49 @@ import ProjectCardSec from './ProjectCardSec';
 
 export const ProjectSec = () => {
   return (
-    <div className="p-10 md:p-24 text-white shadow-xl ">
-      <h1 className="text-2xl md:text-4xl text-white font-bold">Project</h1>
-      <div className="py-12 px-8 flex flex-wrap gap-5">
+    <div className="p-10 md:p-24 text-white shadow-xl">
+      <h1 className="text-2xl md:text-4xl text-white font-bold ">Project</h1>
+      <div className="py-12 px-8 flex flex-wrap justify-center gap-5">
         <ProjectCardSec 
-          title="Weather Application" 
-          main="You can check the weather of any city" 
-          imgSrc="/assets/weather.jpg" 
-          demoLink= 'https://gourabofficial.github.io/Weather-App/'
-          sourceCodeLink='https://github.com/gourabofficial/Weather-App'
+          title="Learning Management System" 
+          main="LMS website using MERN Stack" 
+          imgSrc="/assets/lms.jpg" 
+          demoLink='https://coursehub-ui.vercel.app/'
+          sourceCodeLink='https://github.com/gourabofficial/Learning-Management-System'
         />
         <ProjectCardSec 
-          title="Currency Converter" 
-          main="currency conver at real time" 
-          imgSrc="/assets/currencyconverter.jpg" 
-          demoLink= 'https://gourabofficial.github.io/Currency_Converter/'
-          sourceCodeLink='https://github.com/gourabofficial/Currency_Converter'
+          title="E-commerce website" 
+          main="E-commerce website using MERN Stack" 
+          imgSrc="/assets/ecommerce.jpg" 
+          demoLink="https://github.com/gourabofficial/Project-E-Commerce"
+          sourceCodeLink='https://github.com/gourabofficial/Project-E-Commerce'
         />
         <ProjectCardSec 
           title="Password Generator" 
           main="Create your own password" 
           imgSrc="/assets/password.jpg" 
-          demoLink= 'https://password-genarator-react.vercel.app/'
+          demoLink='https://password-genarator-react.vercel.app/'
           sourceCodeLink='https://github.com/gourabofficial/Overpower-React/tree/main/Password_Generator'
         />
         <ProjectCardSec 
-          title="Myntra clone" 
-          main="E-commerce website using html css" 
-          imgSrc="/assets/myntra.jpg" 
-          demoLink= 'https://gourabofficial.github.io/Myntra_Clone/'
-          sourceCodeLink='https://github.com/gourabofficial/Myntra_Clone'
+          title="Authentication System" 
+          main="Authentication System using MERN Stack" 
+          imgSrc="/assets/auth.jpg" 
+          demoLink='https://github.com/gourabofficial/MERN-Auth'
+          sourceCodeLink='https://github.com/gourabofficial/MERN-Auth'
         />
         <ProjectCardSec 
           title="React-Website" 
           main="simple website using react and react-router" 
           imgSrc="/assets/ownwebsite.png" 
-          demoLink= 'https://react-website-orcin-eight.vercel.app/'
+          demoLink='https://react-website-orcin-eight.vercel.app/'
           sourceCodeLink='https://github.com/gourabofficial/Overpower-React/tree/main/reactRoute'
         />
         <ProjectCardSec 
           title="Tic-Tac-Toe" 
           main="Funny game using javascript" 
           imgSrc="/assets/tictactoe.jpg" 
-          demoLink= 'https://gourabofficial.github.io/Tic-Tac-Toe-Game/'
+          demoLink='https://gourabofficial.github.io/Tic-Tac-Toe-Game/'
           sourceCodeLink='https://github.com/gourabofficial/Tic-Tac-Toe-Game'
         />
       </div>
